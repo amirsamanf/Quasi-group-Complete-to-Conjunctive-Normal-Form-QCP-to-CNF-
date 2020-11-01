@@ -199,6 +199,3 @@ sol.close()
 solution = checkSolution(lines,order)
 print(solution)
 
-
-
-
