@@ -197,4 +197,8 @@ lines = sol.readlines()
 sol.close()
 
 solution = checkSolution(lines,order)
-print(solution)
+if not solution:
+    print("Unsat")
+else:
+    for i in range(0, len(solution), order):
+        print(solution[i:i+order])
